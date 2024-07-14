@@ -1,0 +1,157 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FoodCollection",
+		"_postman_id": "5b0685a4-72b1-588c-2f2a-4c89115c7688",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/fruit/add",
+			"request": {
+				"url": "http://localhost:8080/fruit/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 201,\n    \"name\": \"apple\",\n    \"type\": \"fruit\",\n    \"quantity\": 500,\n    \"unit\": \"g\"\n  }\n]\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fruit/list?unit=g",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/fruit/list?unit=g",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						"list"
+					],
+					"query": [
+						{
+							"key": "unit",
+							"value": "g",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fruit/search/2",
+			"request": {
+				"url": "http://localhost:8080/fruit/search/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fruit/delete/19",
+			"request": {
+				"url": "http://localhost:8080/fruit/delete/19",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/vegetable/add",
+			"request": {
+				"url": "http://localhost:8080/vegetable/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 201,\n    \"name\": \"broccoli\",\n    \"type\": \"vegetable\",\n    \"quantity\": 500,\n    \"unit\": \"g\"\n  }\n]\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/vegetable/list?unit=kg",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/vegetable/list?unit=kg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vegetable",
+						"list"
+					],
+					"query": [
+						{
+							"key": "unit",
+							"value": "kg",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/vegetable/search/1",
+			"request": {
+				"url": "http://localhost:8080/vegetable/search/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/vegetable/delete/20",
+			"request": {
+				"url": "http://localhost:8080/vegetable/delete/20",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
